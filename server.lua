@@ -45,7 +45,9 @@ function sendToDiscord(name, color, src, discord_webhook)
 
     local ids = ExtractIdentifiers(src)
     local connect = {
-        {
+        {   
+            ["username"] = "",
+            ["avatar_url"] = "",
             ["color"] = color,
             ["title"] = "**".. name .."**",
             ["description"] = "Identifier:** ".. identifiers.steam .."**\nLink Steam: **https://steamcommunity.com/profiles/".. tonumber(ids.steam:gsub("steam:", ""),16) .."**\n Rockstar: **".. identifiers.license .."**\n Discord: <@".. ids.discord:gsub("discord:", "") .."> |  Discord ID: **".. identifiers.discord .."** \n IP Address: **".. GetPlayerEndpoint(src) .."**",
