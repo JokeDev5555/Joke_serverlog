@@ -12,5 +12,9 @@ Config['senddc'] = {
 	}
 }
 
--- local massage = "Player ".. xPlayer.name .." BuyItem ".. itemname .." price ".. price .. ""
--- TriggerEvent('Joke_serverlog:senddiscord', massage , 16711680, source, "Your Webhook discord")
+
+-- เว็ปดูสี https://www.computerhope.com/htmcolor.htm
+
+-- local massage = "Player ".. xPlayer.name .." BuyItem ".. xItem.name. .." price ".. price .. ""
+-- TriggerEvent('Joke_serverlog:senddiscord', massage , 66C4E4, source, "Webhook")
+
